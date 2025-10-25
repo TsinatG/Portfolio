@@ -1,1 +1,1 @@
-I'm starting my portifolio
+I'm starting my portfolio
