@@ -1,14 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Main</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-<br>
-    <h1 class="header-title">Main</h1>
-    <a href ="blog.html"> blog </a>
-    <a href ="about.html"> about </a>
-    <p>Hello! My name is Tsinat, and I am a web developer with a passion for creating beautiful and functional websites. I have been in the industry for over 5 years and specialize in front-end development.</p>
-    <p>In my free time, I enjoy Reading, Walking, and exploring new technologies. Feel free to reach out if you'd like to connect!</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="main.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p class="tagline">Hello! My name is Tsinat, and I am a web developer with a passion for creating beautiful and functional websites. I have been in the industry for over 5 years and specialize in front-end development. In my free time, I enjoy Reading, Walking, and exploring new technologies. Feel free to reach out if you'd like to connect!</p>
+
+        </section>
+
+        <div class="content-wrapper">
+            <!-- Main Content Area -->
+            <article class="main-content">
+                <section class="intro-section">
+                    <h2>Hello, I'm a Web Developer</h2>
+                    <p>This is my personal portfolio showcasing my projects, thoughts, and passion for web development. I believe in creating clean, semantic HTML and beautiful, responsive designs.</p>
+                </section>
+
+                <section class="featured-projects">
+                    <h2>Featured Work</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <h3>Project One</h3>
+                            <p>A responsive web application built with HTML5 and CSS3.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Project Two</h3>
+                            <p>An interactive portfolio website with modern design principles.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Project Three</h3>
+                            <p>A mobile-first approach to web design and development.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Sidebar with Social Links -->
+            <aside class="sidebar">
+                <section class="social-section">
+                    <h3>Follow Me</h3>
+                    <ul class="social-links">
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    </ul>
+                </section>
+
+                <section class="newsletter-preview">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to my newsletter for weekly updates on web development trends and tips.</p>
+                    <a href="contact.html" class="cta-button">Subscribe Now</a>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Built with HTML5 and CSS3</p>
+    </footer>
 </body>
 </html>

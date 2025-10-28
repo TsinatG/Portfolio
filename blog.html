@@ -1,16 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Blog</title>
-    <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class="header-title">Blog</h1>
-    <a href ="main.html"> main</a>
-    <a href ="about.html"> about </a>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>Hello! My name is Tsinat, and I am a web developer with a passion for creating beautiful and functional websites. I have been in the industry for over 5 years and specialize in front-end development.</p>
-    <p>In my free time, I enjoy Reading, Walking, and exploring new technologies. Feel free to reach out if you'd like to connect!</p>
+    <!-- Main Content -->
+    <main class="container">
+        <section class="page-header">
+            <h1>My Blog</h1>
+            <p class="subtitle">Thoughts on web development and design</p>
+        </section>
+
+        <div class="content-wrapper">
+            <!-- Main Content Area -->
+            <article class="main-content">
+                <section class="blog-posts">
+                    <!-- First Blog Post -->
+                    <article class="blog-post">
+                        <header class="post-header">
+                            <h2>Understanding Semantic HTML5</h2>
+                            <div class="post-meta">
+                                <time datetime="2024-01-15T10:30:00Z">January 15, 2024</time>
+                                <span class="reading-time">5 min read</span>
+                            </div>
+                        </header>
+                        <p>Semantic HTML5 is the foundation of modern web development. Using proper semantic elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code> not only makes your code more readable but also improves accessibility and SEO.</p>
+                        <p>When you use semantic HTML, screen readers can better understand the structure of your page, and search engines can more accurately index your content. This is why it's crucial to choose the right element for each piece of content.</p>
+                        <p>Some key semantic elements include:</p>
+                        <ul>
+                            <li><strong>&lt;header&gt;</strong> - Represents introductory content</li>
+                            <li><strong>&lt;nav&gt;</strong> - Contains navigation links</li>
+                            <li><strong>&lt;main&gt;</strong> - Specifies the main content</li>
+                            <li><strong>&lt;article&gt;</strong> - Represents independent content</li>
+                            <li><strong>&lt;section&gt;</strong> - Defines a thematic grouping</li>
+                            <li><strong>&lt;aside&gt;</strong> - Contains tangentially related content</li>
+                            <li><strong>&lt;footer&gt;</strong> - Represents footer content</li>
+                        </ul>
+                        <p>By mastering semantic HTML, you're setting yourself up for success in web development. It's a skill that will serve you well throughout your career.</p>
+                        <footer class="post-footer">
+                            <a href="#" class="read-more">Read Full Post →</a>
+                        </footer>
+                    </article>
+
+                    <!-- Second Blog Post -->
+                    <article class="blog-post">
+                        <header class="post-header">
+                            <h2>CSS3 Transforms and Animations</h2>
+                            <div class="post-meta">
+                                <time datetime="2024-01-08T14:20:00Z">January 8, 2024</time>
+                                <span class="reading-time">7 min read</span>
+                            </div>
+                        </header>
+                        <p>CSS3 transforms and animations have revolutionized the way we create interactive web experiences. Instead of relying solely on JavaScript, we can now create smooth, performant animations using pure CSS.</p>
+                        <p>Transforms allow you to modify the appearance of elements in 2D or 3D space. You can rotate, scale, skew, and translate elements with ease. Combined with transitions, you can create smooth animations that respond to user interactions.</p>
+                        <p>Here are some common transform functions:</p>
+                        <ul>
+                            <li><strong>translate()</strong> - Moves an element from its current position</li>
+                            <li><strong>rotate()</strong> - Rotates an element around a fixed point</li>
+                            <li><strong>scale()</strong> - Changes the size of an element</li>
+                            <li><strong>skew()</strong> - Distorts an element along the X or Y axis</li>
+                        </ul>
+                        <p>When combined with animations and transitions, these transforms can create engaging user experiences that keep visitors on your site longer. The key is to use them purposefully and not overdo it.</p>
+                        <footer class="post-footer">
+                            <a href="#" class="read-more">Read Full Post →</a>
+                        </footer>
+                    </article>
+                </section>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section class="blog-categories">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#">HTML & Semantics</a></li>
+                        <li><a href="#">CSS & Styling</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Best Practices</a></li>
+                    </ul>
+                </section>
+
+                <section class="blog-archive">
+                    <h3>Recent Posts</h3>
+                    <ul class="archive-list">
+                        <li><a href="#">Understanding Semantic HTML5</a></li>
+                        <li><a href="#">CSS3 Transforms and Animations</a></li>
+                        <li><a href="#">Responsive Design Tips</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Built with HTML5 and CSS3</p>
+    </footer>
 </body>
 </html>

@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class="header-title">About Me</h1>
-    <a href ="blog.html"> blog </a>
-    <a href ="main.html"> main </a>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>Hello! My name is Tsinat, and I am a web developer with a passion for creating beautiful and functional websites. I have been in the industry for over 5 years and specialize in front-end development.</p>
-    <p>In my free time, I enjoy Reading, Walking, and exploring new technologies. Feel free to reach out if you'd like to connect!</p>
+    <!-- Main Content -->
+    <main class="container">
+        <section class="page-header">
+            <h1>About Me</h1>
+            <p class="subtitle">Learn more about my journey and passion</p>
+        </section>
+
+        <div class="content-wrapper">
+            <!-- Main Content Area -->
+            <article class="main-content">
+                <section class="about-intro">
+                    <h2>Who Am I?</h2>
+                    <p>I'm a passionate web developer with a keen interest in creating beautiful, functional, and accessible websites. My journey in web development started with a curiosity about how websites work, and it has evolved into a professional pursuit.</p>
+                </section>
+
+                <section class="about-skills">
+                    <h2>My Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Frontend Development</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Responsive Design</li>
+                                <li>Web Accessibility</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Design Principles</h3>
+                            <ul>
+                                <li>User Experience (UX)</li>
+                                <li>User Interface (UI)</li>
+                                <li>Color Theory</li>
+                                <li>Typography</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-journey">
+                    <h2>My Journey</h2>
+                    <p>I started learning web development through online courses and personal projects. Each project has taught me valuable lessons about clean code, semantic HTML, and the importance of responsive design. I'm committed to continuous learning and staying updated with the latest web standards and best practices.</p>
+                </section>
+
+                <section class="about-goals">
+                    <h2>My Goals</h2>
+                    <p>My primary goal is to create websites that not only look great but also provide excellent user experiences. I believe in the power of well-structured HTML, thoughtful CSS, and accessibility-first design. I aim to contribute to making the web a better place, one project at a time.</p>
+                </section>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <ul class="facts-list">
+                        <li><strong>Experience:</strong> 3+ years</li>
+                        <li><strong>Specialization:</strong> Frontend Development</li>
+                        <li><strong>Favorite Tool:</strong> VS Code</li>
+                        <li><strong>Learning:</strong> JavaScript & Frameworks</li>
+                    </ul>
+                </section>
+
+                <section class="contact-cta">
+                    <h3>Let's Connect</h3>
+                    <p>Interested in working together or just want to chat about web development?</p>
+                    <a href="contact.html" class="cta-button">Get in Touch</a>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Built with HTML5 and CSS3</p>
+    </footer>
 </body>
 </html>
