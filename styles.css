@@ -448,3 +448,89 @@ legend {
     font-weight: 600;
     color: var(--text-dark);
 }
+
+/* ============================================
+   11. BUTTONS
+   ============================================ */
+
+.submit-btn,
+.cta-button {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--bg-white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: var(--shadow-md);
+}
+
+/* User action pseudo class: hover */
+.submit-btn:hover,
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* User action pseudo class: active */
+.submit-btn:active,
+.cta-button:active {
+    transform: translateY(0);
+}
+
+/* ============================================
+   12. SIDEBAR SECTIONS
+   ============================================ */
+
+.sidebar section {
+    background-color: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+}
+
+.sidebar h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Social links list */
+.social-links,
+.facts-list,
+.category-list,
+.archive-list,
+.contact-methods {
+    list-style: none;
+}
+
+.social-links li,
+.facts-list li,
+.category-list li,
+.archive-list li,
+.contact-methods li {
+    margin-bottom: 0.75rem;
+}
+
+.social-links a,
+.category-list a,
+.archive-list a,
+.contact-methods a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+    font-weight: 500;
+}
+
+/* User action pseudo class: hover */
+.social-links a:hover,
+.category-list a:hover,
+.archive-list a:hover,
+.contact-methods a:hover {
+    color: var(--secondary-color);
+}
