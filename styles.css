@@ -534,3 +534,82 @@ legend {
 .contact-methods a:hover {
     color: var(--secondary-color);
 }
+/* ============================================
+   13. FOOTER
+   ============================================ */
+
+.main-footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--bg-white);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.main-footer p {
+    color: var(--bg-white);
+    margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   14. ADVANCED SELECTORS
+   ============================================ */
+
+/* Child combinator: direct children only */
+.project-grid > .project-card {
+    border: 1px solid var(--border-color);
+}
+
+/* Structural selector: nth-child */
+.project-card:nth-child(1) {
+    border-left-color: var(--primary-color);
+}
+
+.project-card:nth-child(2) {
+    border-left-color: var(--secondary-color);
+}
+
+.project-card:nth-child(3) {
+    border-left-color: #8b5cf6;
+}
+
+/* Structural selector: nth-of-type */
+.blog-post:nth-of-type(odd) {
+    background-color: rgba(37, 99, 235, 0.02);
+}
+
+/* Negation pseudo class: not() */
+.nav-links a:not(.active) {
+    opacity: 0.9;
+}
+
+.nav-links a:not(.active):hover {
+    opacity: 1;
+}
+
+/* Relational selector: adjacent sibling */
+h2 + p {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+/* Attribute selector: starts with */
+a[href^="https://"] {
+    position: relative;
+}
+
+a[href^="https://"]::after {
+    content: ' ↗️';
+    font-size: 0.8em;
+}
+
+/* Attribute selector: contains */
+input[type="email"],
+input[name*="email"] {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 35px;
+}
