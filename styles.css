@@ -841,3 +841,69 @@ input[name*="email"] {
         width: 350px;
     }
 }
+
+/* ============================================
+   19. ADDITIONAL STYLING
+   ============================================ */
+
+/* Skills container */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.skill-category {
+    background-color: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border-top: 3px solid var(--primary-color);
+}
+
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+/* About sections */
+.about-intro,
+.about-skills,
+.about-journey,
+.about-goals {
+    margin-bottom: 2rem;
+}
+
+.about-intro p,
+.about-journey p,
+.about-goals p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Contact section styling */
+.contact-section,
+.newsletter-section {
+    margin-bottom: 3rem;
+}
+
+.contact-section h2,
+.newsletter-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
