@@ -74,3 +74,72 @@ code {
     font-family: 'Courier New', monospace;
     color: var(--primary-color);
 }
+
+/* ============================================
+   4. HEADER & NAVIGATION
+   ============================================ */
+
+.main-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bg-white);
+    font-family: 'Lora', serif;
+    letter-spacing: 0.05em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--bg-white);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color var(--transition-speed);
+}
+
+/* Pseudo-element for underline effect on hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width var(--transition-speed);
+}
+
+/* User action pseudo class: hover */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Active link styling */
+.nav-links a.active {
+    color: var(--secondary-color);
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
